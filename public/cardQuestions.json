@@ -1,0 +1,248 @@
+[
+    {
+        "id":0,
+        "icon": "/staticAssets/0.png",
+        "takeActionCard":"Roll the dice again."
+    },
+
+    {
+        "id":1,
+        "icon": "/staticAssets/1.png",
+        "iconModal": "/staticAssets/1-modal.png",
+        "discussionQuestion":"How do you talk about AI at your workplace?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+    {
+        "id": 2,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "State of Knowledge",
+        "discussionQuestion": "Is training / education enough or do you also need to recruit new competence in order to speed up your AI development? Where would you look to find that competence?",
+        "questionAnswer": "Which area / company should we embark on a dialogue with?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+    {
+        "id":3,
+        "icon": "/staticAssets/3.png",
+        "iconModal": "/staticAssets/3-modal.png",
+        "discussionQuestion":"Do you think AI can replace your job? Do you feel threatened? Why yes / why not?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+
+    {
+        "id":4,
+        "icon": "/staticAssets/refill-your-drink.png",
+        "takeActionCard":"Refill your drink.",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png"
+    },
+
+
+    {
+        "id": 5,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Leadership",
+        "discussionQuestion": "What new demands do AI put on leaders of today and tomorrow?",
+        "questionAnswer": "Name the biggest change?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+
+
+
+    {
+        "id":6,
+        "icon": "/staticAssets/6.png",
+        "iconModal": "/staticAssets/6-modal.png",
+        "discussionQuestion":"How do you increase competence to benefit from new technology?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+
+    {
+        "id":7,
+        "icon": "/staticAssets/move-to-the-next.png",
+        "takeActionCard":"Move to the next."  
+    },
+
+
+
+    {
+        "id": 8,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Business Areas",
+        "discussionQuestion": "Within what business areas do you see the greatest potential for AI to deliver rapid improvements / efficiency improvements / profits?",
+        "questionAnswer": "Select the most important area.",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+    {
+        "id": 9,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Business Areas",
+        "discussionQuestion": "AI offers a new toolbox for decision support where machine learning techniques can be used for e.g. image recognition, text analytics and prediction / forecasting. In what areas do you see that such tools can be applied within your organisation?",
+        "questionAnswer": "Name the most important area?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+      
+    },
+ 
+    {
+        "id":10,
+        "icon": "/staticAssets/10.png",
+        "iconModal": "/staticAssets/10-modal.png",
+        "discussionQuestion":"What potential do you see for AI within your organisation?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+        
+        
+
+    },
+
+
+    {
+        "id":11,
+        "icon": "/staticAssets/11.png",
+        "iconModal": "/staticAssets/11-modal.png",
+        "discussionQuestion":"Do you see any ethical challenges related to AI development?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+
+
+    {
+        "id":12,
+        "icon": "/staticAssets/2-min-break.png",
+        "takeActionCard":"2 min. break" 
+    },
+ 
+
+    
+    {
+        "id": 13,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Leadership",
+        "discussionQuestion": "How will the role of the leader change as AI is increasingly implemented?",
+        "questionAnswer": "Name the most important role.",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+
+    {
+        "id": 14,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Business Areas",
+        "discussionQuestion": "How could you measure the benefit and value of an AI application in production?",
+        "questionAnswer": "Select one KPI that you want to measure?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+  
+   
+    {   
+        "id": 15,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "State of Knowledge",
+        "discussionQuestion": "Some organisations focus primarily on increasing management's competence in AI, while others raise the competence broadly among multiple or all employees. Which strategy do you think is best for your organisation and why? Are there other ways?",
+        "questionAnswer": "Which strategy is the best for your organisation?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+
+    {
+        "id":16,
+        "icon": "/staticAssets/16.png",
+        "iconModal": "/staticAssets/16-modal.png",
+        "discussionQuestion":"How far have you come with AI within your organisation?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+
+
+    {
+        "id":17,
+        "icon": "/staticAssets/do-some-exercise.png",
+        "takeActionCard":"Do some exercise.",
+        "gameLogo": "./staticAssets/white-game-logo.png"    
+    },
+    {
+        "id":18,
+        "icon": "/staticAssets/18.png",
+        "iconModal": "/staticAssets/18-modal.png",
+        "discussionQuestion":"When do you think your organisation can start making money from AI?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border":"#15b57b"
+    },
+    {
+        "id": 19,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Business Areas",
+        "discussionQuestion": "AI is not only used to replace / automate processes, but more and more often to augment employees in their professional roles. Do you see that your skills and abilities can benefit from AI augmentation, and if so - in what way?",
+        "questionAnswer": "Which one augmented AI area / initiative should we implement?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+    {
+        "id":20,
+        "icon": "/staticAssets/20.png",
+        "iconModal": "/staticAssets/20-modal.png",
+        "discussionQuestion":"Do you think there is a risk that AI will make people passive and incompetent?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png" ,
+        "border":"#15b57b" 
+    },
+
+
+
+ 
+    {
+        "id": 21,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Business Areas ",
+        "discussionQuestion": "AI can create value by automating work tasks and thereby changing business logic and business models. In what areas within your organisation could this be relevant?",
+        "questionAnswer": "Which area is the most important?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+
+ 
+
+    {
+        "id":23,
+        "icon": "/staticAssets/grab-a-bite.png",
+        "takeActionCard":"Grab a bite."
+    },
+
+    {
+        "id":24,
+        "icon": "/staticAssets/return-to-start.png",
+        "takeActionCard":"Return to START."
+    },
+
+
+    {
+        "id": 25,
+        "icon": "/staticAssets/discussion.png",
+        "iconModal": "/staticAssets/discussion-modal.png",
+        "header": "Leadership",
+        "discussionQuestion": "It has been proved challenging to go from small scale projects to actual deployment of AI. Are such attempts in progress within your organisation? What challenges do you face?",
+        "questionAnswer": "What is the biggest challenge in scaling AI projects?",
+        "gameLogo": "/staticAssets/finalLogoChangedWhite.png",
+        "border": "#ff8224"
+    },
+
+    {
+        "id":26,
+        "icon": "/staticAssets/arrowup.png"
+    }
+
+]

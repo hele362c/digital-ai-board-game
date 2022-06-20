@@ -1,0 +1,209 @@
+@use "../base/variables";
+.login-page{
+  background-image: none;
+  }
+
+.container {
+	position: relative;
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  background-size: cover;
+}
+
+.item {
+  background-image: url("/staticAssets/log-in–background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+//animation on the background	
+	animation: loadAnimation 1.2s both;
+	
+	&:nth-child(1) {
+		animation-delay: 0;
+	}
+	&:nth-child(2) {
+		animation-delay: .2s;
+	}
+	&:nth-child(3) {
+		animation-delay: .3s;
+	}
+}
+
+@keyframes loadAnimation{
+	0% { height: 0 }
+	100% { height: 100% }
+}
+
+.logo-login {
+  position: absolute;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 10rem;
+    height: auto;
+  }
+
+  #form-div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    top: 6.5rem;
+    height: 37rem;
+    padding: 1.5rem 2rem 0px;
+    border-radius: 4rem;
+    box-shadow: 15px 15px 17px 0 rgb(0 0 0 / 16%);
+    background-color: #ffffff;
+    border: 0;
+  }
+
+  fieldset{
+    border: 0;
+    width: min-content;
+  }
+
+form {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+  .log-in-header{
+    padding-bottom: 1.8rem;
+  }
+
+p{
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.login-text{
+    padding-bottom: 1.7rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.label{
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+}
+
+input{
+  width: 25rem;
+  height: 3rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 1rem;
+    border: solid 1px #707070;
+    background-color: var(--04304-b);
+}
+.forms_buttons{
+    margin: 40px 0 0px 0;
+}
+#sign-in {
+    width: 410px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 17px;
+    box-shadow: 15px 15px 17px 0 rgba(0, 0, 0, 0.16);
+    background-color: variables.$dark-blue;
+    color: variables.$white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+.error{
+    visibility: hidden;
+    color: #dd5757;
+    font-size: 0.9rem;
+  }
+  input:not(:focus, :placeholder-shown):invalid ~ .error {
+    visibility: visible;
+    color: #dd5757;
+    font-size: 0.9rem;
+  }
+  .hint,
+.error {
+  text-transform: none;
+  color: grey;
+}
+
+.hint {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+  display: block;
+}
+ 
+@media screen and (max-width: 50rem){
+  .logo-login {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 6rem;
+    height: auto;
+  }
+
+.login-page{
+  background-image: url("/staticAssets/mobile-wave.png");
+  width: 100vw;
+  background-size: cover;
+  background-position: 8%;
+  background-repeat: no-repeat;
+}
+.item{
+    background-image: none;
+    animation: none;
+  }
+#form-div{
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0;
+    top: 1.8rem;
+  }
+  
+form {
+    margin-top: 7rem;
+}
+
+.log-in-header{
+  font-size: 3rem;
+}
+.forms_buttons {
+  margin: 2rem 0 2rem 0px;
+}
+#sign-in {
+  width: 176px;
+  height: 54px;
+}
+.form-group{
+  margin-bottom: 1rem;
+}
+#sign-in {
+  &:hover {
+    transform: none;
+  }
+  &:active {
+    transform: none;
+  }
+}
+}

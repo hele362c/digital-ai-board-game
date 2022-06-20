@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.scss" />
+    <link rel="icon" href="/staticAssets/favicon.png" type="image/icon type" />
+    <title>AI Value Accelerator</title>
+  </head>
+  <body class="game">
+    <!-- loading animation -->
+    <div class="blur"></div>
+    <div class="loading-animation">
+      <div class="countdown">
+        <div class="number">
+          <h2>3</h2>
+        </div>
+        <div class="number">
+          <h2>2</h2>
+        </div>
+        <div class="number">
+          <h2>1</h2>
+        </div>
+        <div class="number">
+          <h2>GO</h2>
+        </div>
+      </div>
+    </div>
+    <!-- end of loading animation -->
+    <div class="game_details">
+      <div class="logo-white">
+        <img src="/staticAssets/finalLogoChangedWhite.png" alt="sas logo" />
+      </div>
+
+      <audio id="popupSound" src="/staticAssets/sounds/popup.wav"></audio>
+
+      <div class="sas-white">
+        <img src=".//staticAssets/sass-logo.png" class="icon3" alt="sas logo" />
+      </div>
+
+      <div class="finish-button">
+        <a href="endScreen.html"><img src=".//staticAssets/finishButton.png" class="finishButton" alt="finish button" /></a>
+      </div>
+
+      <img src="/staticAssets/buttonUnmuted.svg" class="unmutedButton" alt="unmute button" />
+      <img src="/staticAssets/buttonMuted.svg" class="mutedButton hidden" alt="mute button" />
+    </div>
+
+    <section class="cardList"></section>
+
+    <template>
+      <article class="card square" tabindex="1">
+        <img class="icon" src="" alt="icon" />
+        <p class="card_text"></p>
+      </article>
+    </template>
+
+    <div class="popup"></div>
+
+    <article class="modal hide">
+      <div class="time_container">
+        <div id="countdown"></div>
+      </div>
+      <img class="modal-icon" src="" alt="" />
+      <div class="input-card">
+        <h1 class="modal-header"></h1>
+        <p class="modal-discussionQuestion"></p>
+        <p class="modal-questionAnswer"></p>
+        <img class="modal-game-logo" src="" alt="" />
+      </div>
+    </article>
+
+    <!-- end of the game -->
+    <!-- dice -->
+    <div id="ui_dado" tabindex="-1" disabled>
+      <audio id="diceSound" preload="auto" src="/staticAssets/sounds/diceSound.wav"></audio>
+      <p id="result"></p>
+      <div id="platform">
+        <div id="dice" tabindex="-1" disabled onmousedown="dice(event)">
+          <div class="side front">
+            <div class="dot center"></div>
+          </div>
+          <div class="side front inner"></div>
+          <div class="side top">
+            <div class="dot dtop dleft"></div>
+            <div class="dot dbottom dright"></div>
+          </div>
+          <div class="side top inner"></div>
+          <div class="side right">
+            <div class="dot dtop dleft"></div>
+            <div class="dot center"></div>
+            <div class="dot dbottom dright"></div>
+          </div>
+          <div class="side right inner"></div>
+          <div class="side left">
+            <div class="dot dtop dleft"></div>
+            <div class="dot dtop dright"></div>
+            <div class="dot dbottom dleft"></div>
+            <div class="dot dbottom dright"></div>
+          </div>
+          <div class="side left inner"></div>
+          <div class="side bottom">
+            <div class="dot center"></div>
+            <div class="dot dtop dleft"></div>
+            <div class="dot dtop dright"></div>
+            <div class="dot dbottom dleft"></div>
+            <div class="dot dbottom dright"></div>
+          </div>
+          <div class="side bottom inner"></div>
+          <div class="side back">
+            <div class="dot dtop dleft"></div>
+            <div class="dot dtop dright"></div>
+            <div class="dot dbottom dleft"></div>
+            <div class="dot dbottom dright"></div>
+            <div class="dot center dleft"></div>
+            <div class="dot center dright"></div>
+          </div>
+          <div class="side back inner"></div>
+          <div class="side cover x"></div>
+          <div class="side cover y"></div>
+          <div class="side cover z"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rollme">Roll Me!</div>
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+      function dice(event) {
+        diceSound.play();
+        event.preventDefault();
+        $("#platform").removeClass("stop").addClass("playing");
+        $("#dice");
+        setTimeout(function () {
+          $("#platform").removeClass("playing").addClass("stop");
+          var number = Math.floor(Math.random() * 6) + 1;
+          var x = 0,
+            y = 20,
+            z = -20;
+          switch (number) {
+            case 1:
+              x = 0;
+              y = 20;
+              z = -20;
+              break;
+            case 2:
+              x = -100;
+              y = -150;
+              z = 10;
+              break;
+            case 3:
+              x = 0;
+              y = -100;
+              z = -10;
+              break;
+            case 4:
+              x = 0;
+              y = 100;
+              z = -10;
+              break;
+            case 5:
+              x = 80;
+              y = 120;
+              z = -10;
+              break;
+            case 6:
+              x = 0;
+              y = 200;
+              x = 10;
+              break;
+          }
+
+          $("#dice").css({
+            transform: "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)",
+          });
+
+          $("#platform").css({
+            transform: "translate3d(0,0, 0px)",
+          });
+
+          $("#result").html(number);
+        }, 1120);
+      }
+    </script>
+  </body>
+  <!-- dice over -->
+</html>

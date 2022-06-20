@@ -1,0 +1,361 @@
+@use "../base/variables";
+
+.endScreen {
+  height: 100vh;
+  background-image: url("/staticAssets/endBackground2.png");
+}
+
+.endScreenMain {
+  height: 100%;
+}
+
+.sasLogo {
+  position: absolute;
+  margin-top: 2.5rem;
+  margin-left: 3.125rem;
+  width: 10rem;
+  height: 4rem;
+}
+
+.sasLogoBlue2 {
+  position: absolute;
+  margin-top: 2.5rem;
+  margin-left: 3.125rem;
+  width: 10rem;
+  display: none;
+}
+
+.endTextImageContainer {
+  display: flex;
+  height: inherit;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.endTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 10%;
+  flex-basis: 130%;
+  padding-top: 10rem;
+  padding-left: 2rem;
+}
+
+.endMainHeading {
+  width: 63.563rem;
+  position: absolute;
+  top: 10rem;
+  right: 6%;
+}
+
+.endSecondHeading {
+  font-size: 4rem;
+  color: variables.$dark-blue;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.endScreenText {
+  font-size: 2.938rem;
+  color: variables.$dark-blue;
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+
+.endButtonFlex {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.endScreenBtn:first-child {
+  margin-right: 2.25rem;
+}
+
+.endScreenBtn:nth-child(2) {
+  margin-left: 2.25rem;
+}
+
+.endScreenBtn {
+  width: 17.063rem;
+  height: 4.75rem;
+  border-radius: 1.063rem;
+  border-style: none;
+  color: white;
+  font-size: 2.063rem;
+  box-shadow: 0.938rem 0.938rem 1.063rem 0 rgba(0, 0, 0, 0.16);
+  background-color: variables.$dark-blue;
+  margin-bottom: 0;
+}
+
+.endImageContainer {
+  margin-left: 6%;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.endGraphic {
+  max-width: 100%;
+}
+
+// responsivness-------------------------------
+@media only screen and (max-width: 1730px) {
+  .endTextContainer {
+    margin-right: 8%;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .endMainHeading {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .endTextContainer {
+    margin-right: 8%;
+  }
+
+  .endMainHeading {
+    width: 52rem;
+  }
+
+  .endSecondHeading {
+    font-size: 3.2rem;
+  }
+
+  .endScreenText {
+    font-size: 2.8rem;
+  }
+
+  .endScreenBtn {
+    width: 13.063rem;
+    height: 3.75rem;
+    font-size: 1.7rem;
+  }
+
+  .endScreenBtn:first-child {
+    margin-right: 1.5rem;
+  }
+
+  .endScreenBtn:nth-child(2) {
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .endTextContainer {
+    flex-basis: 100%;
+    padding-top: 13rem;
+  }
+
+  .endMainHeading {
+    width: 48rem;
+    top: 13rem;
+  }
+
+  .endSecondHeading {
+    font-size: 3rem;
+  }
+
+  .endScreenText {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .endTextContainer {
+    padding-top: 14rem;
+  }
+
+  .endMainHeading {
+    width: 42rem;
+    top: 14rem;
+  }
+
+  .endSecondHeading {
+    font-size: 2.8rem;
+  }
+
+  .endScreenText {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .endTextContainer {
+    margin-right: 6%;
+  }
+
+  .endMainHeading {
+    width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .endScreen {
+    background-color: white;
+    background-image: url("/staticAssets/endMobileBackground.svg");
+    background-repeat: no-repeat;
+    background-position-y: 29.6rem;
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  .endTextImageContainer {
+    flex-direction: column-reverse;
+  }
+
+  .endTextContainer {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-top: 5rem;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .endMainHeading {
+    position: initial;
+    font-size: 3.5rem;
+    padding: 0;
+  }
+
+  .endSecondHeading {
+    font-size: 2.2rem;
+  }
+
+  .endScreenText {
+    font-size: 1.8rem;
+  }
+
+  .endScreenBtn {
+    width: 13.063rem;
+    height: 3.75rem;
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+
+  .endImageContainer {
+    margin-right: 6%;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .endGraphic {
+    max-width: 60%;
+  }
+
+  .sasLogo {
+    display: none;
+  }
+
+  .sasLogoBlue2 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .endImageContainer {
+    flex-basis: 90%;
+  }
+
+  .endTextContainer {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .endGraphic {
+    max-width: 68%;
+  }
+
+  .sasLogoBlue2 {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .endMainHeading {
+    position: initial;
+    width: 100%;
+    padding: 0;
+  }
+
+  .endSecondHeading {
+    font-size: 1.8rem;
+  }
+
+  .endScreenText {
+    font-size: 1.6rem;
+  }
+
+  .endTextContainer {
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+  }
+
+  .endScreenBtn {
+    width: 11.563rem;
+    height: 3.188rem;
+    font-size: 1.313rem;
+  }
+
+  .endGraphic {
+    max-width: 72%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .endTextContainer {
+    padding-bottom: 0;
+  }
+
+  .endMainHeading {
+    position: initial;
+    font-size: 1.875rem;
+    padding: 0;
+  }
+
+  .endSecondHeading {
+    font-size: 1.625rem;
+  }
+
+  .endScreenText {
+    font-size: 1.438rem;
+  }
+
+  .endButtonFlex {
+    flex-direction: column;
+  }
+
+  .endScreenBtn:first-child {
+    margin-right: 0;
+  }
+
+  .endScreenBtn:nth-child(2) {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .endGraphic {
+    max-width: 84%;
+  }
+
+  .sasLogoBlue2 {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .endImageContainer {
+    flex-basis: 80%;
+  }
+
+  .endGraphic {
+    max-width: 94%;
+  }
+}

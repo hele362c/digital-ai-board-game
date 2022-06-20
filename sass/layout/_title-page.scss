@@ -1,0 +1,354 @@
+@use "../base/variables";
+
+.titleScreen {
+    height: 100vh;
+    background-color: variables.$light-blue;
+}
+
+.titleScreenMain {
+    height: 100%;
+}
+
+.sasLogo {
+    position: absolute;
+    margin-top: 2.5rem;
+    margin-left: 3.125rem;
+    width: 10rem;
+    height: auto;
+}
+
+.textImageContainer {
+    display: flex;
+    height: inherit;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    padding-top: 13.6rem;
+    flex-basis: 100%
+    
+}
+
+.mainHeading {
+    position: absolute;
+    width: 72.875rem;
+    top: 15.625rem;
+    left: 6%;
+}
+
+.titleScreenText {
+    font-size: 3.75rem;
+    color: variables.$dark-blue;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.buttonFlex {
+    display: flex;
+}
+
+.titleScreenBtn:first-child {
+    margin-right: 2.25rem;
+}
+
+.titleScreenBtn:nth-child(2) {
+    margin-left: 2.25rem;
+}
+
+.titleScreenBtn {
+    width: 17.063rem;
+    height: 4.75rem;
+    border-radius: 1.063rem;
+    border-style: none;
+    color: white;
+    font-size: 2.063rem;
+    box-shadow: 0.938rem 0.938rem 1.063rem 0 rgba(0, 0, 0, 0.16);
+    background-color: variables.$dark-blue;
+    margin-bottom: 0;
+}
+
+.imageContainer {
+    margin-right: 6%;
+    flex-basis: 100%;
+    display: flex
+}
+
+.graphic {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1700px) {
+    
+    .textContainer {
+        padding-top: 14.6rem;
+    }
+    
+    .mainHeading {
+        width: 64rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    
+    .mainHeading {
+        width: 60rem;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    
+    .textContainer {
+        margin-left: 8%;
+    }
+    
+    .mainHeading {
+        width: 55rem;
+        top: 16rem;
+    }
+
+    .titleScreenText {
+        font-size: 3.5rem;
+    }
+
+    .titleScreenBtn {
+        width: 13.063rem;
+        height: 3.75rem; 
+        font-size: 1.7rem;
+    }
+} 
+
+
+@media only screen and (max-width: 1350px) {
+    .mainHeading {
+        width: 52rem;
+        top: 16rem;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    .textContainer {
+        margin-left: 8%;
+        padding-top: 11.6rem;
+    }
+    
+    .mainHeading {
+        width: 50rem;
+        top: 17rem;
+    }
+
+    .titleScreenText {
+        font-size: 2.7rem;
+    }
+
+    
+
+    .titleScreenBtn {
+        width: 13.063rem;
+        height: 3.75rem; 
+        font-size: 1.7rem;
+        margin-top: -5rem;
+    }
+
+    .titleScreenBtn:first-child {
+        margin-right: 1.5rem;
+    }
+    
+    .titleScreenBtn:nth-child(2) {
+        margin-left: 1.5rem;
+    }
+} 
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .textContainer {
+        margin-left: 6%;
+        padding-top: 9.6rem;
+    }
+
+    .mainHeading {
+        width: 43rem;
+        top: 15.6rem;
+    }
+} 
+
+
+@media only screen and (max-width: 900px) {
+    
+    .titleScreen {
+        background-color: white;
+        background-image: url("/staticAssets/mobileBackground3.svg");
+        background-repeat: no-repeat;
+        background-position-y: -24.4rem;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    .textImageContainer {
+        flex-direction: column-reverse;
+    }
+
+    .textContainer {
+        margin-left: 6%;
+        margin-right: 6%;
+        padding-top: 3rem;
+    }
+
+    .mainHeading {
+        position: initial;
+        padding: 0;
+    }
+
+    .titleScreenBtn {
+        width: 13.063rem;
+        height: 3.75rem; 
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+
+    .imageContainer {
+        margin-left: 6%;
+        justify-content: center;
+    }
+
+    .graphic {
+        max-width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .titleScreen {
+        background-position-y: -26rem;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .titleScreen {
+        background-position-y: -23rem;
+    }
+
+    .graphic {
+        max-width: 70%;
+    }
+
+    .mainHeading {
+        width: 40rem;
+    }
+
+    .titleScreenText {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    .titleScreen {
+        background-position-y: -24rem;
+    }
+}
+
+
+@media only screen and (max-width: 740px) {
+
+    .titleScreen {
+        background-position-y: -26rem;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+
+    .graphic {
+        max-width: 75%;
+    }
+
+    .mainHeading {
+        width: 100%;
+    }
+
+    .titleScreenText {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 634px) {
+
+    .graphic {
+        max-width: 80%;
+    }
+
+    .mainHeading {
+        width: 100%;
+    }
+
+    .titleScreenText {
+        font-size: 2rem;
+    }
+
+    .titleScreenBtn {
+        width: 11.563rem;
+        height: 3.188rem; 
+        font-size: 1.313rem;
+    }
+
+    .sasLogo {
+        margin-top: 6%;
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .titleScreen {
+        background-position-y: -28rem;
+    }
+
+    .graphic {
+        max-width: 78%;
+    }
+
+    .mainHeading {
+        font-size: 2.2rem;
+    }
+
+    .titleScreenText {
+        font-size: 2rem;
+    }
+
+    .buttonFlex {
+        flex-direction: column;
+    }
+
+    .titleScreenBtn:first-child {
+        margin-right: 0;
+    }
+    
+    .titleScreenBtn:nth-child(2) {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .graphic {
+        max-width: 94%;
+    }
+
+}

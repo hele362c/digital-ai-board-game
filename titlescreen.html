@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.scss"/>
+    <link rel="icon" href="/staticAssets/favicon.png" type="image/icon type">
+    <title>Home</title>
+  </head>
+  <body class="titleScreen">
+    <main class="titleScreenMain">
+      
+        <img class="sasLogo" src="/staticAssets/sas-logo.png" alt = "sas logo">
+     
+   <div class="textImageContainer">
+    <div class="textContainer">
+      <!-- <h1 class="mainHeading">AI VALUE ACCELERATOR</h1> -->
+      <img class="mainHeading" src="/staticAssets/finalLogoChanged.png" alt = "game logo">
+      <p class="titleScreenText">Discover a new & fun way <br>
+        of learning about AI</p>
+      <div class="buttonFlex">
+        <button class="titleScreenBtn" id="titleBtn1" onclick="window.location.href ='instruction.html'">GUIDE</button>
+        <button class="titleScreenBtn" id="titleBtn2" onclick="window.location.href ='game.html'">PLAY</button>
+        <audio id="buttonSound" src="/staticAssets/sounds/buttonClick.wav"></audio>
+        <audio id="gameCountdownSound" src="/staticAssets/sounds/gameCountdown.wav"></audio>
+      </div>
+    </div>
+    <div class="imageContainer">
+      <img class="graphic" src="/staticAssets/titleScreen.svg">
+    </div>
+  </div>
+  </main>
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      let buttonSound = document.querySelector("#buttonSound");
+      let gameCountdownSound = document.querySelector("#gameCountdownSound");
+
+      window.addEventListener("load", start);
+
+      function start() {
+        document.querySelector("#titleBtn1").addEventListener("click", clickButton1);
+        document.querySelector("#titleBtn2").addEventListener("click", clickButton2)
+      }
+
+      function clickButton1() {
+        buttonSound.play();
+
+      }
+
+      function clickButton2() {
+        buttonSound.play();
+        gameCountdownSound.play()
+      }
+    </script>
+  </body>
+</html>

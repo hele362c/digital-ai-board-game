@@ -1,0 +1,148 @@
+@use "../base/variables";
+
+.insightScreen{
+    background-image: url("/staticAssets/log-in–background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.insights {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 9rem;
+    width: 1300px;
+    height: auto;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    box-shadow: 15px 15px 17px 0 rgb(0 0 0 / 16%);
+    background-color: #ffffff;
+    border: 0;
+}
+
+.key-insights{
+    color: #04304a;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.line{
+    overflow-wrap: break-word;
+    text-align: left;
+    list-style-type: circle;
+}
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.insigthButton{
+    width: 180px;
+    height: 54px;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 15px 15px 17px 0 rgb(0 0 0 / 16%);
+    background-color: #04304a;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    border: 0;
+    margin-bottom: 2rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      
+    }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+form{
+  grid-row: 4;
+}
+textarea{
+  width: 53rem;
+  height: 12rem;
+  border-radius: 14px;
+  border: solid 3px #ff6fbb;
+  background-color: white;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.input-card{
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+}
+
+.input-icon{
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+  width: auto;
+  height: 6rem;
+  background-repeat: no-repeat;
+}
+
+
+//   MOBIL 
+@media screen and (max-width: 50rem){
+    .insights{
+        width: 30rem;
+        height: auto;
+        border-radius: 2rem;
+    }
+    .key-insights {
+        font-size: 2rem;
+    }
+    .insigthButton {
+        width: 130px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+  .input-card{
+    margin-top: 2rem;
+  }
+    textarea{
+      width: 25rem;
+      align-self: center;
+      margin-top: -5rem;
+      margin-left: 0.5rem;
+    }
+    .modal .input-card .modal-discussionQuestion{
+      text-align: center;
+    }
+    .modal .input-card .modal-questionAnswer{
+      text-align: center;
+    }
+    .insigthButton{
+
+      &:hover {
+        transform: none;
+      }
+      &:active {
+        transform: none;
+      }
+    }
+   
+}
+

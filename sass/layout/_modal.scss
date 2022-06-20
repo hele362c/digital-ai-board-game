@@ -1,0 +1,79 @@
+@use "../base/variables";
+
+
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: variables.$white;
+    box-shadow: 15px 15px 17px 0 rgb(0 0 0 / 40%);
+    border: solid 29px #ff6fbb;
+    border-radius: 15px;
+    background-color: #04304A;
+    padding: 3rem 5rem;
+}
+  .modal-icon{
+    position:absolute;
+    left: 2vw;
+    top: 1vw;
+    width: auto;
+    height: 6rem;
+    background-repeat: no-repeat;
+  }
+
+  .input-card{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    padding: 0;
+}
+
+.modal .input-card .modal-game-logo{
+    height: 1.5rem;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal .input-card .modal-header{
+    margin-top: 1.5rem;
+    text-align: center;
+    color: variables.$white;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.modal .input-card .modal-discussionQuestion{
+    text-align:center;
+    margin-top: 1rem;
+    font-weight: lighter;
+    font-size: 24px;
+
+}
+
+.modal .input-card .modal-questionAnswer{
+    text-align: left;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 2rem; 
+    font-weight: lighter;
+    font-size: 24px;
+}
+.hide{
+    visibility: hidden;
+}
+@media screen and (max-width: 50rem){
+    .modal{
+       width: 30rem;
+        height: auto;
+        padding: 0;
+    }
+    .time_contaner{
+        margin-right: 0;
+        margin-top: 0;
+      }
+ 
+}
