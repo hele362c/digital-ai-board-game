@@ -170,7 +170,7 @@ function visCard() {
   let squareArray = document.querySelectorAll(".square");
   const gameFigure = document.createElement("img");
   gameFigure.className = "gamePawn";
-  gameFigure.src = "public/staticAssets/gameFigure3.png";
+  gameFigure.src = "/staticAssets/gameFigure3.png";
   gameFigure.style.width = "2rem";
   squareArray.forEach((square) => {
     square.addEventListener(
